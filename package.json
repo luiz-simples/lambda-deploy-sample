@@ -1,0 +1,13 @@
+{
+  "name": "lamb-new-comment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:luiz-simples/lambda-deploy-sample.git",
+  "author": "Luiz Amorim <luiz.simples@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-appsync": "^1.0.12",
+    "graphql-tag": "^2.8.0",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}

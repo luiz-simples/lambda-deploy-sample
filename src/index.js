@@ -1,6 +1,6 @@
 global.window = {
-  navigator: {onLine: true},
-  addEventListener: function () {}
+  navigator: { onLine: true },
+  addEventListener: function () { }
 }
 
 require('isomorphic-fetch')
@@ -31,14 +31,18 @@ const appSyncClient = new AWSAppSyncClient({
   auth: {
     type: 'AWS_IAM',
     credentials: {
-      accessKeyId: 'AKIAIRHDI7Z3WFFJQ33A',
-      secretAccessKey: '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'
+      accessKeyId: 'AKIAI37PK26AHTWPBW2A',
+      secretAccessKey: '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'
     }
   }
 })
 
 appSyncClient.hydrated().then(function (client) {
-  client.query({query: query}).then(function logData(data) {
+  client.query({ query: query }).then(function logData(data) {
     console.log('results of query: ', data)
   }).catch(console.error)
 })
+
+exports.handler = (event, context, callback) => {
+  console.log('DEU CERTO')
+};
